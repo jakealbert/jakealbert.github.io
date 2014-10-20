@@ -1,3 +1,15 @@
-jakealbert.github.io
+# jakealbert.com
 
-markdown + pandoc + latex
+markdown resume
+
+```
+                +----------+
+   markdown --> |  pandoc  | --> html + pdf
+                +----------+
+```
+
+# build
+
+```
+$ make
+```

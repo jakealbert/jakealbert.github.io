@@ -1,0 +1,95 @@
+body {
+    background: #999;
+    font-size: 14pt;
+    font-family: "Courier", monospace;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #ccc;
+    color: black;
+}
+
+div {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 14pt 12pt;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    min-width: 40em;
+}
+
+nav {
+    background: black;
+    color: white;
+    border: 1px solid #bbb;
+}
+
+section.buffer {
+    border: 1px solid #bbb;
+    flex: 1 1 auto;
+    width: 100%;
+    order: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 14pt 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.point:after {
+    background: #ccc;
+    -webkit-animation: blink-cursor-mode 1s steps(1) infinite;
+    animation: blink-cursor-mode 1s steps(1) infinite;
+    content: " ";
+    white-space: pre;
+    position: relative;
+}
+
+@-webkit-keyframes blink-cursor-mode {
+    0% { background: transparent; }
+    50% { background: #ccc; }
+}
+@keyframes blink-cursor-mode {
+    0% { background: transparent; }
+    50% { background: #ccc; }
+}
+
+footer {
+    background: #ddd;
+    overflow: hidden;
+    white-space: pre;
+    height: 34pt;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+section.mini-buffer {
+    bottom: 0;
+    background: white;
+    position: absolute;
+    display: flex;
+    flex: 0 1 auto;
+    height: 1.2em;
+    width: 100%;
+}
+section.mini-buffer .

@@ -1,0 +1,83 @@
+\setuppapersize[letter][letter]
+
+\setupinteraction[state=start]
+
+\setuplayout
+  [width=middle,
+   height=middle,
+   backspace=20mm,
+   cutspace=0mm,
+   topspace=15mm,
+   bottomspace=20mm,
+   header=0mm,
+   footer=15mm]
+
+\setuppagenumbering[location={footer, right}]
+
+\setupwhitespace[medium]
+\setupalign[hyphenated, lesshyphenation]
+\doublehyphendemerits=150000
+
+\setupcolor[hex]
+
+\definecolor[body][h=080808]
+\definecolor[title][h=2b2b2b]
+\definecolor[bullet][h=8c8c8c]
+
+\setupbodyfont[11pt]
+\setupcolors[textcolor=body]
+\setupbodyfontenvironment[default][em=bf]
+
+\setupblackrules
+  [height=2mm,
+   width=2mm,
+   color=bullet]
+
+\setuphead[section]
+  [style=\tfd\bf,
+   color=title,
+   number=no,
+   align=middle]
+
+\setuphead[subsection]
+  [style=\tfb\bf,
+   color=title,
+   number=no,
+   align=right,
+   before={\blank[4*medium]\leavevmode\raise 2pt \blackrule\hspace},
+   after={\blank[2*medium]}]
+
+\setuphead[subsubsection]
+  [style=\tfa,
+   color=body,
+   number=no,
+   align=right,
+   before={\blank[2*medium]},
+   after={\blank[2*medium]}]
+
+\definedescription[description]
+  [headstyle=bold,
+   alternative=right,
+   width=fit,
+   align=right,
+   hang=fit,
+   distance=0mm,
+   margin=0mm,
+   before={\setupbodyfontenvironment[default][em=sl]},
+   after={\blank[3*medium]}]
+
+\setupitemize
+  [joinedup,
+   autointro,
+   symbol=no,
+   width=0mm,
+   packed,
+   before={\setupinterlinespace[line=4.0ex]}]
+
+\setuptables
+  [textwidth=max,
+   rulethickness=1pt]
+
+\starttext
+$body$
+\stoptext
