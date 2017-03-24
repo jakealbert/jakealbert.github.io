@@ -9,7 +9,11 @@ CSS_FONT = "//fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro:4
 PANDOC = pandoc --smart --standalone --from markdown
 
 PANDOC_TEX  = --to context --template template.tex
-PANDOC_HTML = --to html --css $(CSS_FONT) --css resume.css --variable=pagetitle:"Jake Albert / Resume"
+PANDOC_HTML = --to html --css $(CSS_FONT) --css resume.css \
+ --variable=pagetitle:"Jake Albert / Resume" \
+ --variable=keywords:"jake albert, resume" \
+ --variable=author:"Jake Albert" \
+ --variable=header-includes='<meta name="description" content="Jake Albert Resume" />'
 PANDOC_DOCX = --to docx
 
 %.pdf: %.tex
