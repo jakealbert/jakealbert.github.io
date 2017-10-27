@@ -3,9 +3,10 @@ image: node
 pages:
   stage: deploy
   script:
-    - ls .
+    - mkdir public
+    - cp index.html style.css resume.html resume.css resume.md resume.pdf public/
   artifacts:
     paths:
-    - .
+    - public
   only:
   - master
