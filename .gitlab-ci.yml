@@ -3,6 +3,7 @@ image: node
 pages:
   stage: deploy
   script:
+    - ls .
   artifacts:
     paths:
     - .
