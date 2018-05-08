@@ -1,8 +1,8 @@
-Jake Albert
+Jake Lipton
 ===========
 
 ----------------------------------    ----------------------------------
-https://jakealbert.com                             jake.albert@gmail.com
+https://jakelipton.com                      jake.garcia.lipton@gmail.com
 ----------------------------------    ----------------------------------
 
 

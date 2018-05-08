@@ -10,10 +10,10 @@ PANDOC = pandoc --smart --standalone --from markdown
 
 PANDOC_TEX  = --to context --template template.tex
 PANDOC_HTML = --to html --css $(CSS_FONT) --css resume.css \
- --variable=pagetitle:"Jake Albert / Resume" \
- --variable=keywords:"jake albert, resume" \
- --variable=author:"Jake Albert" \
- --variable=header-includes='<meta name="description" content="Jake Albert Resume" />'
+ --variable=pagetitle:"Jake Lipton / Resume" \
+ --variable=keywords:"jake lipton, resume" \
+ --variable=author:"Jake Lipton" \
+ --variable=header-includes='<meta name="description" content="Jake Lipton Resume" />'
 PANDOC_DOCX = --to docx
 
 %.pdf: %.tex
